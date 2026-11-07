@@ -5,7 +5,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SR Movies - Entertainment</title>
-<style>
+
+.download {
+  display: inline-block;
+  background: #252530;
+  color: white;
+  padding: 11px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 12px 14px;
+}
+  <style>
 *{box-sizing:border-box}
 body{margin:0;background:#0b0b10;color:white;font-family:Arial,sans-serif}
 header{background:#15151d;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
@@ -62,6 +74,13 @@ video{width:100%;max-height:400px;background:black}
 <h3>My First Film</h3>
 <p>Original Film</p>
 <button onclick="playVideo('videos/film1.mp4')">▶ Watch</button>
+  
+<a class="download"
+href="videos/film1.mp4"
+download="My-First-Film.mp4">
+⬇ Download
+</a>
+  
 </div>
 
 <div class="card" data-name="comedy video">
